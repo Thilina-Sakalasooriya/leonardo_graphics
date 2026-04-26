@@ -413,7 +413,6 @@ nav .container {
     overflow: hidden;
     box-shadow: var(--gold-glow);
 }
-
 .cta-button:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
