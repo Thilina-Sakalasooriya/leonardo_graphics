@@ -607,6 +607,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --nav-height: 60px;
+    }
+
+    .nav-logo {
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
     section {
         padding: 60px 0;
     }
