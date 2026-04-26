@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Leonardo Graphics & Artworks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="custom-cursor-active">
+    <canvas id="antigravity-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+                LEONARDO<span> GRAPHICS</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section id="about-hero" style="padding-top: 150px;">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                <div class="about-text reveal-left visible">
+                    <h1 style="font-size: clamp(3rem, 8vw, 4rem); line-height: 1.1; margin-bottom: 2rem;">The Mind Behind the Design.</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 1.5rem;">I am a multidisciplinary designer with a passion for building clean, modern, and high-end digital experiences.</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">With a background in fine arts and a deep fascination with technology, I bridge the gap between creative vision and technical execution. Every project I undertake is driven by the goal of creating something that is not just beautiful, but meaningful.</p>
+                    
+                    <div style="display: flex; gap: 2rem; margin-top: 3rem;">
+                        <div>
+                            <h3 style="color: var(--accent-color); font-size: 2rem;">02+</h3>
+                            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Years Exp</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--accent-color); font-size: 2rem;">100+</h3>
+                            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Projects</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--accent-color); font-size: 2rem;">20+</h3>
+                            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal-right visible" style="padding: 2rem;">
+                    <div style="width: 100%; aspect-ratio: 1/1; background: var(--card-bg); border-radius: 30px; position: relative; overflow: hidden; border: 1px solid rgba(182, 141, 64, 0.2);">
+                        <img src="images/thilina.png" alt="Thilina - Leonardo Graphics" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                <div class="service-item reveal-item visible" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3 style="margin-bottom: 0.2rem;">Junior Designer</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Echo lanka, Sri Lanka</p>
+                    </div>
+                    <p style="color: var(--accent-color); font-weight: 600;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <p>&copy; 2026 Leonardo Graphics & Artworks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

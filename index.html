@@ -1,86 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/globe.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Leonardo Graphics & Artworks | Premium Design Studio</title>
+    <meta name="description" content="Portfolio of Leonardo Graphics & Artworks, a premium graphic designer specializing in branding, 3D art, and UI/UX design.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <main>
-        <header>
-            <img src="images/5.png" alt="">
-            <img src="images/6.png" width="200px" >
-        </header>
-        <section class="banner">
-            <div class="content">
-                <h1 class="left">GEOGRAPHY</h1>
-                <div class="right">
-                    <h2>TEXT</h2>
-                    <p>Web Design</p>
-                    <p>METHANATA mona hri danna ane
-                        <br>metehntath</p>
-                </div>
-                <div class="image">
-                    <img src="images/globe 2.png" alt="">
-                </div>
-            </div>
-        </section>
+    <canvas id="antigravity-bg"></canvas>
 
-
-        <section class="grid grid-2">
-            <div class="autoShow">
-                <figure>
-                    <img src="images/6.png" alt="">
-                </figure>
-                <p>
-                    When an unknown printer took a galley of type and scrambled it to make a type specimen b <br>
-                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop like.
-                </p>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+                LEONARDO<span> GRAPHICS</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
             </div>
-            <div class="autoShow">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen b <br>
-                ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                printer took a galley of type and scrambled it to make a type specimen b <br>
-                ook. It has survived not only five centuries, but also the leap into electronic typesetting, remai
-            </div>
-
-            <div class="autoShow">
-                <figure>
-                    <img src="images/2.png" alt="">
-                </figure>
-                <p>
-                    When an unknown printer took a galley of type and scrambled it to make a type specimen b <br>
-                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                </p>
-            </div>
-            <div class="autoShow">
-                <figure>
-                    <img src="images/candy.png" alt="">
-                </figure>
-            </div>
-        </section>
-
-        <section class="grid grid-3">
-            <div class="autoBLur">LUNDEV</div>
-            <div class="autoBLur">DESIGNER</div>
-            <div class="autoBLur">DEVELOPER</div>
-            <div class="autoBLur">SUBCRIBE +</div>
-            <div class="autoBLur">SEE MORE &#8599;</div>
-        </section>
-    </main>
-    <footer>
-        <div class="grid grid-5 content">
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est nostrum eveniet aliquid unde distinctio, omnis sed vitae amet nobis atque.</div>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inveum est nostrum eveniet aliquid unde distinctio, omnis sed vitae amet nobis atque.</div>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui, assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam! Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est nos atque.</div>
-            <div>
-                <figure>
-                    <img src="images/8.png" alt="">
-                </figure>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="visible">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevating Brands Through Design</h1>
+                <p>Crafting premium visual identities, immersive 3D experiences, and state-of-the-art digital products.</p>
+                <a href="work.html" class="cta-button">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-item">
+                    <img src="images/POST/1.png" alt="Featured Project 1" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Creative Concept 01</h3>
+                        <p>Branding & Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-item">
+                    <img src="images/POST/my_1.png" alt="Featured Project 2" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Creative Concept 02</h3>
+                        <p>Visual Arts</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-item">
+                    <img src="images/POST/wish (4).png" alt="Featured Project 3" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Creative Concept 03</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <h2>Design is the silent ambassador of your brand.</h2>
+                    <p>I am a multidisciplinary graphic designer based in the digital realm. My work is defined by a commitment to minimalism, precision, and the pursuit of visual excellence.</p>
+                    <p>With over 8 years of experience, I help ambitious brands stand out through thoughtful design and high-end aesthetics.</p>
+                </div>
+                <div class="services-list">
+                    <div class="service-item reveal-item">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <h3>Post Design</h3>
+                        <p>Creative and engaging social media visuals that capture attention.</p>
+                    </div>
+                    <div class="service-item reveal-item">
+                        <i class="fa-solid fa-cube"></i>
+                        <h3>T-Shirt Design</h3>
+                        <p>Custom apparel designs with unique concepts and high-quality detailing.</p>
+                    </div>
+                    <div class="service-item reveal-item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3>Leaflet Design</h3>
+                        <p>Clean and impactful promotional materials that communicate effectively.</p>
+                    </div>
+                    <div class="service-item reveal-item">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>Visiting Card Design</h3>
+                        <p>Professional and memorable business card designs that reflect your brand identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Something Great</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Leonardo Graphics & Artworks. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

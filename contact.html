@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Leonardo Graphics & Artworks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="custom-cursor-active">
+    <canvas id="antigravity-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+                LEONARDO<span> GRAPHICS</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section id="contact-header" style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: clamp(3rem, 8vw, 5rem); margin-bottom: 1rem;">Get In Touch</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Have a project in mind? Let's build something exceptional together. Reach out via the form below or through my social channels.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-detailed">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                <div class="contact-info reveal-left visible">
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1rem; color: var(--accent-color);">Direct Contact</h3>
+                        <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope" style="margin-right: 10px; color: var(--accent-color);"></i> leonardo.graphics.and.artworks@gmail.com</p>
+                        <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--accent-color);"></i> +94 70 111 7372</p>
+                        <p><a href="https://wa.me/94701117372" target="_blank" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-whatsapp" style="margin-right: 10px; color: #25D366;"></i> WhatsApp Me</a></p>
+                    </div>
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1rem; color: var(--accent-color);">Location</h3>
+                        <p>Based in New York City,<br>Available Worldwide.</p>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent-color);">Socials</h3>
+                        <div style="display: flex; gap: 1.5rem; font-size: 1.5rem;">
+                            <a href="https://www.facebook.com/profile.php?id=61586692315876" target="_blank" style="color: var(--text-secondary); transition: color 0.3s;"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i class="fa-brands fa-behance"></i></a>
+                            <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal-right visible">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Project Type</label>
+                            <select id="subject" required>
+                                <option value="post">Post Design</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="invitation">Invitation Card Design</option>
+                                <option value="shirt">Shirt Design</option>
+                                <option value="tag">Tag Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <p>&copy; 2026 Leonardo Graphics & Artworks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
