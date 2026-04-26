@@ -224,18 +224,22 @@ nav .container {
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.2;
+    display: block;
+    line-height: 1;
+    margin-top: 2px;
 }
 
-.logo-text span {
+.brand-title {
+    display: block;
+    font-size: 1em; /* matches parent font-size */
+}
+
+.brand-sub {
     display: block;
     font-size: 0.55em;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.35em;
     color: var(--accent-color);
-    margin-top: -0.2em;
+    margin-top: 2px;
 }
 
 .theme-btn {
