@@ -220,7 +220,22 @@ nav .container {
 
 .logo span {
     color: var(--accent-color);
-    margin-left: 0.25rem;
+    /* removed margin-left to prevent offset when stacked */
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 0.55em;
+    letter-spacing: 0.4em;
+    color: var(--accent-color);
+    margin-top: -0.2em;
 }
 
 .theme-btn {
